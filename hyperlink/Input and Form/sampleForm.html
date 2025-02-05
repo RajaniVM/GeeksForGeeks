@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Input Form</title>
+    </head>
+    <body>
+        <form>
+            <label>First name</label> &nbsp;
+            <input type="text" name="fname"> <br><br>
+            <label>Last Name</label> &nbsp; <input type="text" name="lname"> <br><br>
+            <label>Email</label> &nbsp; <input type="email" name="useremail" autocomplete="on"  placeholder="email" required><br><br>
+            <label>Password</label> &nbsp; <input type="password" name="userpassword" placeholder="Password" required><br><br>
+            <label>Mobile Number</label> &nbsp; <input type="tel" name="mobileno" maxlength="10"><br><br>
+            <label>Select Age</label> &nbsp; <input type="range" name="age" min="10" max="60" value="50" step="1"><br><br>
+            <label>Date of Birth</label> &nbsp; <input type="date" name="dob" min="2023-01-01" max="2023-12-31" value="2023-05-01"><br><br>
+            
+            <p>Select your Hobbies</p>
+            <input type="checkbox" name="hobby1"> <label>Reading Books </label><br><br>
+            <input type="checkbox" name="hobby2"> <label> Cooking </label><br><br>
+            <input type="checkbox" name="hobby3"> <label>Gardening  </label><br><br>   
+            <input type="checkbox" name="hobby4"> <label> Traveling </label><br><br>
+            
+            <p>Gender</p>
+            <input type="radio" name="gender"> <label>Female</label>
+            <input type="radio" name="gender"> <label>Male</label>
+            <br><br>
+            <label>Upload Photo</label> &nbsp; <input type="file" name="userphoto" capture="user">
+            <input type="color" name="color"><br><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+  
+</html>

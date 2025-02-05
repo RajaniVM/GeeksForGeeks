@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .inline-example{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .container-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80vh;
+            background-color: antiquewhite;
+        }
+
+        .flex-example{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 5px;
+            
+        }
+         
+        .container-grid{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 100px 100px 300px; /*repeat(3, 1fr);*/
+        }
+        .grid-example{
+        
+           background-color: red;
+           margin: 5px;
+           text-align: center;
+        padding: 10px;
+        font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- inline element display-->
+     <div class="container">
+        <div class="inline-example"></div>
+        <div class="inline-example"></div>
+        <div class="inline-example"></div>
+     </div>
+
+     <!-- flex example-->
+     <div class="container-flex">
+        <div class="flex-example"></div>
+        <div class="flex-example"></div>
+        <div class="flex-example"></div>
+     </div>
+
+      <!-- grid example-->
+      <div class="container-grid">
+        <div class="grid-example">1</div>
+        <div class="grid-example">2</div>
+        <div class="grid-example">3</div>
+        <div class="grid-example">4</div>
+        <div class="grid-example">5</div>
+        <div class="grid-example">6</div>
+     </div>
+     
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <title>Form Example</title>
+</head>
+<body>
+    <form action="/someotherform" method="post" enctype="multipart/form-data" target="_blank" autocomplete="off">
+        <input type="text" name="useremail" placeholder="Enter Email">
+        <input type="password" name="userpassword" placeholder="Enter Password">
+        <button type="submit" name="submit" method="get">Submit</button>
+
+        <br><br>
+
+        <label>select age</label>
+        <select name="age" size="1" value="6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <textarea name="msg" rows="10" cols="10" style="width:100px;height:100px;max-width:500px;min-width:500px;"></textarea>
+
+        <fieldset>
+            <legend>Login</legend>
+            <input type="email" name="useremail" placeholder="Enter Email">
+        <input type="password" name="userpassword" placeholder="Enter Password">
+        <button type="submit" name="submit" method="get">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 600px;
+            background-color: aqua;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: ani;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        .box1:hover{
+          
+            animation-play-state: paused;
+        }
+       @keyframes ani {
+        0% {
+            background-color: black;
+            transform: translate(0px, 0px);
+        }
+        25% {
+            background-color: blue;
+            transform: translate(100px, 400px);
+        }
+        100% {
+            background-color: black;
+            transform: translate(0px, 0px);
+        }
+       } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
